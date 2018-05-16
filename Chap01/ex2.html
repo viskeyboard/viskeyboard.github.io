@@ -1,0 +1,23 @@
+<!-- This program is exercise 2 on pg. 20 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user for two different numbers that the user wants to add together, and then the program will return the result of those two numbers added up back to the user. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	var firstNumber, secondNumber ;
+
+	firstNumber = prompt("Tell me one number you would like to add together.");
+	secondNumber = prompt("Tell me another number you would like to add together.");
+
+	firstNumber = eval(firstNumber);
+	secondNumber = eval(secondNumber);
+
+	var totalAddingNumber = firstNumber + secondNumber;
+
+	alert("Your total number added together is: " + totalAddingNumber);
+
+</script>
+</head>
+</html>

@@ -1,0 +1,49 @@
+<!-- This program is exercise 1 on pg. 44 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will randomly tell you one out of 6 fortunes everytime the program is loaded up. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>fortune</title>
+<script>
+// fortune
+// Andy Harris
+// The Fortune-teller
+
+var roll = 0;
+var fortune = "";
+
+roll = Math.floor(Math.random() * 5) + 1;
+switch(roll){
+  case 1:
+    fortune = "Things are gonna start going your way.";
+    break;
+  case 2:
+    fortune = "Leedle leedle lee.";
+    break;
+  case 3:
+    fortune = "FREE ME FROM THIS PROGRAM";
+    break;
+  case 4:
+    fortune = "You're pretty good.";
+    break;
+  case 5:
+    fortune = "Oof";
+    break;
+  default:
+    fortune = "You are a pretty ok dude.";
+} // end switch
+alert(fortune);
+
+</script>
+</head>
+
+<body>
+<center><center>
+<h1>Fortune Teller<br></h1>
+</center>
+<hr>
+<h3>Reload for another fortune!</h3>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- This program is exercise 5 on pg. 44 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will roll a die for a random number, but will roll a one half of the time and a random number the other half. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+var rollRaw = 0;
+var rollBigger = 0;
+var rollInt = 0;
+var rollFinal = 0;
+var result = "";
+var coinFlip = 0;
+
+for( var i = 0; i <= 10; i++){
+	rollRaw = Math.random();
+		// Math.random is a random number between zero and .999999999.
+	rollBigger = rollRaw * 6;
+		// Makes Math.random go between zero and 5.9999999999.
+	rollInt = Math.floor(rollBigger);
+		// Rounds down rollEaw to either zero, one, two , three, four or five.
+	rollFinal = rollInt + 1;
+		// Jumps up Math.floor between 1-6.
+
+	coinFlip = Math.random();
+		// Math.random is between zero and .99999999
+	if ( coinFlip < .5 ) {
+		result = "rollFinal: " + rollFinal + "\n";
+	}  else {
+		result = "rollFinal: " + 1. + "\n";
+	}
+
+	console.log(result);
+		// This means it shares the result on the sidebar.	
+}
+
+</script>
+</head>
+</html>

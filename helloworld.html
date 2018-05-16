@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var counter= 0;
+			// When the page loads, this sets the variable to zero.
+
+		function myFunction() {
+			/*alert("whaddup pimps" + Math.random() )*/
+			counter = counter + 1;
+			tempId = document.getElementById("paragraph3");
+			// Fetches the id of the paragraph then assign new text inside (inner)
+			tempId.innerHTML = "Oof, you clicked me " + counter + " times."; 
+		}
+	</script>
+</head>
+</html>
+
+<body>
+	<button onclick=myFunction() >
+			Dont click me.
+	</button>
+		<!-- The button above launches the function. -->
+
+	<p id="paragraph3">
+		Please don't click the button.
+
+		(hint: hit spacebar to click faster)
+	</p>
+		<!-- The paragraph above is the target of the function. -->
+
+</body>

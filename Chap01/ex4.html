@@ -1,0 +1,23 @@
+<!-- This program is exercise 4 on pg. 20 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user their first name and their shoe size, and then give them their "lucky number" by multiplying the amount of letters in their name with their shoe size. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	var firstName, shoeSize ;
+
+	firstName = prompt("What is your first name?");
+	shoeSize = prompt("What is your shoe size?");
+
+	// convert the human text into a number
+	shoeSize = eval(shoeSize);	
+
+	var luckyNumber = firstName.length * shoeSize;
+
+	alert("Your lucky number is: " + luckyNumber   );
+
+</script>
+</head>
+</html>

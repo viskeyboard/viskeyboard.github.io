@@ -1,0 +1,28 @@
+<!-- This program will count up to to ten by one, and will count by pop ups on the page, but only when the user clicks on the area it says to click on the screen. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+/* Puts the for loop inside of a function */
+
+function myFunction(){
+
+	for(var i = 1; i <= 10; i++) {
+		confirm( "HERE IS A NUMBER: "  +  i);
+		
+	}		//Closing of the for loop
+
+}		//Closing of the function
+
+</script>
+</head>
+
+<!-- This makes it so the function starts when someone clicks on the body -->
+<body onclick=myFunction()>
+
+	<p>Click anywhere here to run the function!</p>
+
+</body>
+</html>

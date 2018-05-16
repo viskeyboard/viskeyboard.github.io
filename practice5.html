@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> 
+
+	var randomNumber = 0;
+
+	randomNumber = Math.random();
+		// This is too small, this randomly chooses between 0 to .999999999999999999
+	randomNumber = randomNumber * 6;
+	randomNumber = Math.ceil(randomNumber);
+	console.log("The number the computer chose is: "  + randomNumber   );
+
+
+	var humanGuess = 0;
+	humanGuess= prompt("From 1 to 6, what number am I thinking of?");
+
+	if (randomNumber == humanGuess){
+		alert("You guessed correctly!")
+	} else {
+		alert("Sorry, you guessed incorrectly.")
+	}    // Closing tag of "if else" statement.
+
+
+
+	// Second "if else" statement for the warm-up.
+	var x = 1;
+
+	if ( x < 5) {
+		console.log("The number was less than 5.");
+	} else {
+		console.log("The number was 5 or higher.");
+	}
+
+</script>
+</head>
+</html>

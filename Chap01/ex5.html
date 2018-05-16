@@ -1,0 +1,25 @@
+<!-- This program is exercise 5 on pg. 20 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user for the height and width of a rectangle, and then determine the area of the rectangle by (h * w) and then determine the perimeter by doing (2* (h + w)). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+	var rectangleHeight, rectangleWidth;
+
+	rectangleHeight = prompt("What is the height of your rectangle?");
+	rectangleWidth = prompt("What is the width of your rectangle?");
+
+	rectangleHeight = eval(rectangleHeight);
+	rectangleWidth = eval(rectangleWidth);
+
+	var rectangleArea = rectangleHeight * rectangleWidth;
+	var rectanglePerimeter =  2 * (rectangleHeight + rectangleWidth);
+
+	alert("The area of your rectangle is: " + rectangleArea   );
+	alert("The perimeter of your rectangle is: " + rectanglePerimeter   );
+
+</script>
+</head>
+</html>

@@ -1,0 +1,64 @@
+<!-- This program is exercise 3 on pg. 44 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user 5 questions and will track down how many questions they got right. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	var answerOne, answerTwo, answerThree, answerFour, answerFive ;
+	var correctAnswers = 0;
+	var incorrectAnswers = 0;
+
+	answerOne = prompt("What is 194 - 103?");
+	if (answerOne == "91"){
+		alert("Correct!  ");
+		correctAnswers = correctAnswers + 1;
+	} else {
+		alert("Sorry, you were incorrect.  ");
+		incorrectAnswers = incorrectAnswers + 1;
+	}
+
+	answerTwo = prompt("What is 259 + 712?");
+	if (answerTwo == "971"){
+		alert("Correct!  ");
+		correctAnswers = correctAnswers + 1;
+	} else {
+		alert("Sorry, you were incorrect.  ");
+		incorrectAnswers = incorrectAnswers + 1;
+	}
+
+	answerThree = prompt("What is 12 * 53?");
+	if (answerThree == "636"){
+		alert("Correct!  ");
+		correctAnswers = correctAnswers + 1;
+	} else {91
+		alert("Sorry, you were incorrect.  ");
+		incorrectAnswers = incorrectAnswers + 1;
+	}
+
+	answerFour = prompt("What is 234 / 39?");
+	if (answerFour == "6"){
+		alert("Correct!  ");
+		correctAnswers = correctAnswers + 1;
+	} else {
+		alert("Sorry, you were incorrect.  ");
+		incorrectAnswers = incorrectAnswers + 1;
+	}
+
+	answerFive = prompt("What is 22.06 + 324.05?");
+	if (answerFive == "346.11"){
+		alert("Correct!  ");
+		correctAnswers = correctAnswers + 1;
+	} else {
+		alert("Sorry, you were incorrect.  ");
+		incorrectAnswers = incorrectAnswers + 1;
+	}
+
+		alert("Thank you for doing this quiz!");
+		alert("You got this many correct out of five: " + correctAnswers);
+		alert("And you got this many wrong: " + incorrectAnswers);
+	
+</script>
+</head>
+</html>

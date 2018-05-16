@@ -1,0 +1,23 @@
+<!-- This program is exercise 1 on pg. 62 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user what 2 + 3 equals, and will keep asking until the user gets the answer correct. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+var mathAnswer ;
+
+	mathAnswer = prompt("What is 2 + 3?");
+	if (mathAnswer == "5"){
+		alert("Correct!  ");
+	} else {
+		alert("Sorry, you were incorrect, try again.");
+		/*incorrectAnswers = incorrectAnswers + 1;*/
+	}
+
+mathAnswer = eval(mathAnswer);
+
+</script>
+</head>
+</html>

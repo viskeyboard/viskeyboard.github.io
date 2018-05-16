@@ -1,0 +1,27 @@
+<!-- This program is exercise 1 on pg. 20 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user for his first name, last name and middle inital and then read it back to them in a greeting. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var firstName, lastName, middleInitial ;
+
+	firstName = prompt("What is your first name?");
+	lastName = prompt("What is your last name?");
+	middleInitial = prompt("What is your middle initial?");
+
+	alert("Hello! Your name is:  " + lastName + ", " + firstName + ", " + middleInitial); 
+	alert("Also written as:  " + firstName + ", " + middleInitial + ", " + lastName);
+
+
+	/*+ firstName + middleInitial" " + lastName
+	+ lastName +  ", "   +  firstName  +  ",  "    + middleInitial*/
+
+	//  alert()   or  console.log()    or  document.write()
+
+	// Or also known as: " + firstName" " + middleInitial" " + lastName" 
+
+</script>
+</head>
+</html>

@@ -1,0 +1,28 @@
+<!-- This program is exercise 6 on pg. 44 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user how many sides the user wants on a die and then will roll a random number depending on how many sides they chose. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+var dieSize = 6;
+
+dieSize = prompt("How many sides would you like your die to have?")
+
+for( var i = 0; i <= 1; i++){
+	var rollRaw = Math.random();
+	// Rolls from 0 to .9999999
+	var rollBigger = rollRaw * dieSize;
+		// Makes Math.random go between zero and the number the user chooses.
+	var rollFinal = rollBigger + 1;
+		// Jumps up Math.floor between 1 to the number the user chose.
+
+	var result = "rollFinal: " + rollFinal + "\n";
+	}	// End of for loop
+
+alert(result);
+
+</script>
+</head>
+</html>

@@ -1,0 +1,29 @@
+<!-- This program is exercise 3 on pg. 20 of the book "Javascript Programming for the Absolute Beginner". -->
+<!-- This program will ask the user for two different numbers and then the program will add, subtract, multiply and divide the two numbers and read the user each result back to them. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	var firstNumber, secondNumber ;
+
+	firstNumber = prompt("Tell me one number you would like to add, subtract, multiply and divide.");
+	secondNumber = prompt("Tell me another number you would like to add, subtract, multiply and divide.")
+
+	firstNumber = eval(firstNumber);
+	secondNumber = eval(secondNumber);
+
+	var totalAddingNumber = firstNumber + secondNumber;
+	var totalSubtractingNumber = firstNumber - secondNumber;
+	var totalMultiplyingNumber = firstNumber * secondNumber;
+	var totalDividingNumber = firstNumber / secondNumber;
+
+	alert("Your total number added together is: " + totalAddingNumber);
+	alert("Your total number subtracted together is: " + totalSubtractingNumber);
+	alert("Your total number multiplied together is: " + totalMultiplyingNumber);
+	alert("Your total number divided together is: " + totalDividingNumber);
+
+</script>
+</head>
+</html>
